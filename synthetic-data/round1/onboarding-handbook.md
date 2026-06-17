@@ -1,62 +1,62 @@
-# BTS-Synthetic Engineering Onboarding Handbook
+# Vesh Concord — Researcher Arrival Handbook
 
-*Version 4.2 — Effective January 2026*
+*Version 4.2 — Effective Cycle 2026.01*
 
-Welcome to BTS-Synthetic Engineering. This handbook covers everything you need in your first two weeks.
+Welcome to the Terran Engram Archive. This handbook covers everything you need in your first two cycles of residency among us.
 
-## Day 1 — Equipment and accounts
+## Arrival 1 — Vessel and bindings
 
-You'll receive a laptop, a YubiKey, and credentials for the following:
-- Email (your firstname.lastname@bts-synthetic.example)
-- Slack
-- GitHub (organization: `bts-synthetic`)
-- Read-only access to staging environments
+You'll receive a sensing-shell, a resonance key, and bindings for the following:
+- A signal-name (your designation across the Lattice)
+- The Concord channels
+- The archive index (organization: `terran-engram`)
+- Surface access to the *practice* engrams (synthetic, no living minds)
 
-You will **not** receive prod access on day 1. See "Getting prod access" below.
+You will **not** receive access to live human memory on arrival. See "Getting archive access" below.
 
-## Day 2-5 — Your buddy and your team
+## Arrival 2-5 — Your anchor and your team
 
-Your manager will pair you with a buddy for your first two weeks. Spend time with them. They'll walk you through:
-- The codebase tour
-- Our git workflow (trunk-based, all changes via PR, two approvals to merge)
-- The on-call rotation
-- The post-mortem culture (blameless, written within 48 hours of any P0 or P1)
+Your overseer will pair you with an anchor for your first two cycles. Spend time with them. They'll walk you through:
+- The tour of the archive lattice
+- Our retrieval workflow (every read leaves a trace, all changes via petition, two seals to commit)
+- The watch rotation
+- The aftercare custom (a written reflection logged within 48 hours of any deep extraction)
 
-## Getting prod access
+## Getting archive access
 
-Prod access at BTS-Synthetic is split into three levels:
+Access to human memory is split into three levels:
 
-1. **Read-only** — for debugging. Available after 2 weeks of tenure and one completed pairing session with an SRE.
-2. **Read-write** — for routine ops. Available after 6 weeks and SRE sign-off.
-3. **Privileged** — for incident response. Available after on-call certification (12 weeks).
+1. **Surface (read-only)** — for observation. Available after 2 cycles of residency and one completed attunement session with a Watcher.
+2. **Annotation (read-write)** — for archival work. Available after 6 cycles and Watcher sign-off.
+3. **Deep (privileged)** — for reconstruction. Available after resonance certification (12 cycles).
 
-To request read-only access:
+To request surface access:
 
-1. Open a ticket in the `#sre-access-requests` Slack channel.
-2. Tag your manager and an SRE for sign-off.
-3. The SRE on rota that week will pair with you to walk through the access tooling.
-4. Once paired, the SRE files your access in our IAM tool. Access is granted within 4 working hours.
+1. Open a petition in the `#retrieval-hall` channel.
+2. Tag your overseer and a Watcher for sign-off.
+3. The Watcher on rotation that span will run an attunement session to walk you through the access tooling.
+4. Once attuned, the Watcher binds your access through the Seal-Engine. Access is granted within 4 cycles.
 
-The SRE on rota changes weekly. Check the on-call schedule in PagerDuty for the current week.
+The Watcher on rotation changes each span. Check the watch schedule in the Rotation Lattice for the current span.
 
-## Key people
+## Key figures
 
-| Role | Name | Slack handle |
+| Role | Name | Signal-name |
 | --- | --- | --- |
-| Head of Engineering | Anika Reddy | @anika |
-| Head of SRE | Carlos Mendes | @carlosm |
-| Head of Platform | Yuki Tanaka | @yuki |
-| Head of Security | Maya Singh | @maya-s |
-| Engineering Ops Lead | Tom Bryce | @tomb |
+| Head of Exploration | Anira Vel | @anira |
+| Head of Retrieval | Caro Mensk | @caro |
+| Custodian of Systems | Yuuth Kanra | @yuuth |
+| Keeper of Seals | Maa'ya Senth | @maaya-s |
+| Operations Steward | Torm Brask | @tormb |
 
-## Service ownership
+## Engine ownership
 
-| Service | Owning team | Tech lead |
+| Engine | Owning team | Lead |
 | --- | --- | --- |
-| payment-service | Payments | Tom Bryce |
-| auth-service | Platform | Yuki Tanaka |
-| signing-service | Platform | Yuki Tanaka |
-| tenant-config-service | Platform | Yuki Tanaka |
-| frontend | Web | Priya Shah |
+| harvest-engine | Harvest | Torm Brask |
+| identity-binding engine | Systems | Yuuth Kanra |
+| sealing engine | Systems | Yuuth Kanra |
+| index engine | Systems | Yuuth Kanra |
+| surface-render engine | Render | Pria Shal |
 
-For ownership of any service not listed, run `gh repo view --json owners <service>` in our org.
+For ownership of any engine not listed, query `lattice view --json wardens <engine>` on the index.
