@@ -9,7 +9,7 @@ Following the April incident review (PROD-INC-04-2026), we are tightening produc
 
 - Eliminates the SRE pairing session as the access trigger (it was a bottleneck — backlog grew to 3 weeks).
 - Replaces it with an **online certification** + **just-in-time access** model.
-- Centralises access requests in our IAM platform, not Slack.
+- Centralises access requests in our IAM platform, not Slack,
 
 ## New process for read-only access
 
