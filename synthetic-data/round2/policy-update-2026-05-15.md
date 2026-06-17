@@ -1,38 +1,38 @@
-# Production Access Policy — UPDATED
+# Terran Engram Archive — Access Policy — UPDATED
 
-*Effective 2026-05-15. Supersedes the January 2026 version.*
-*Owned by Maya Singh (Head of Security) and Carlos Mendes (Head of SRE).*
+*Effective Cycle 2026.05.15. Supersedes the Cycle 2026.01 version.*
+*Owned by Maa'ya Senth (Keeper of Seals) and Caro Mensk (Head of Retrieval).*
 
 ## What changed and why
 
-Following the April incident review (PROD-INC-04-2026), we are tightening production access. The new policy:
+Following the review of the April resonance breach (ENGRAM-INC-04-2026), we are tightening access to human memory. The new policy:
 
-- Eliminates the SRE pairing session as the access trigger (it was a bottleneck — backlog grew to 3 weeks).
-- Replaces it with an **online certification** + **just-in-time access** model.
-- Centralises access requests in our IAM platform, not Slack,
+- Eliminates the Watcher attunement session as the access trigger (it was a bottleneck — the petition backlog grew to 3 spans).
+- Replaces it with a **resonance certification** + **just-in-time binding** model.
+- Centralises access requests in the Seal-Engine platform, not the retrieval hall.
 
-## New process for read-only access
+## New process for surface access
 
-1. Engineer completes the **Prod Access Foundations** course in the BTS Learning portal (90 minutes, self-paced).
-2. After passing the assessment, engineer requests access through the IAM platform (link in the learning portal completion email).
-3. Access is granted **just-in-time**, scoped to a 4-hour window per request. Engineers re-request as needed.
-4. Engineer's manager is notified of each request. No manager sign-off required for individual requests — only for the initial certification.
+1. Researcher completes the **Resonance Foundations** rite through the Concord learning lattice (90 cycles, self-paced).
+2. After passing the attestation, the researcher requests access through the Seal-Engine platform (link in the rite-completion signal).
+3. Access is bound **just-in-time**, scoped to a 4-cycle window per request. Researchers re-request as needed.
+4. The researcher's overseer is notified of each request. No overseer sign-off required for individual requests — only for the initial certification.
 
-**No SRE pairing session required.** No Slack ticket required.
+**No Watcher attunement session required.** No retrieval-hall petition required.
 
-## Tenure requirement reduced
+## Residency requirement reduced
 
-The 2-week tenure requirement is reduced to **3 working days**. Engineers can complete the certification and request access from day 4.
+The 2-cycle residency requirement is reduced to **3 working cycles**. Researchers can complete the certification and request access from arrival-cycle 4.
 
 ## Migration
 
-Engineers who already have read-only access under the old policy retain it through 2026-06-30, after which they must complete the new certification or lose access.
+Researchers who already hold surface access under the old policy retain it through Cycle 2026.06.30, after which they must complete the new certification or lose access.
 
 ## What hasn't changed
 
-- Read-write and privileged access requirements are unchanged.
-- The on-call rotation continues to manage P0/P1 escalations.
+- Annotation and deep access requirements are unchanged.
+- The watch rotation continues to manage fading-mind escalations.
 
 ## Why the change matters
 
-The old policy was created when we had 40 engineers. We're now 280. The pairing-session model didn't scale. The new model is auditable, faster, and aligns with our SOC2 controls.
+The old policy was set when the Concord held 40 researchers. We are now 280. The attunement-session model didn't scale. The new model is auditable, faster, and aligns with our containment seals.
