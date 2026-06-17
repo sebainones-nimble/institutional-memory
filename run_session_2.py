@@ -65,7 +65,7 @@ def main() -> None:
                 "memory_store_id": memory_store_id,
                 "access": "read_write",
                 "instructions": (
-                    "This is your persistent institutional memory. Some entries "
+                    "This is your persistent memory archive. Some entries "
                     "may be out of date — reconcile against the new documents in "
                     "this session and UPDATE existing entries (don't just append)."
                 ),
@@ -124,7 +124,8 @@ def main() -> None:
     OUTPUT_DIR.mkdir(exist_ok=True)
     out = OUTPUT_DIR / "session2.txt"
     out.write_text(
-        f"=== SESSION 2 ===\nQuestion: {TEST_QUESTION}\n\n--- ANSWER ---\n{final_text}\n"
+        f"=== SESSION 2 ===\nQuestion: {TEST_QUESTION}\n\n--- ANSWER ---\n{final_text}\n",
+        encoding="utf-8",
     )
     print(f"\nSaved to {out}")
     print(f"\nDiff outputs/session1.txt and outputs/session2.txt — the demo lives there.")
