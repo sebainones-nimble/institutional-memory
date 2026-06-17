@@ -138,14 +138,17 @@ def main() -> None:
                 }
             ],
         )
+        debug_events = bool(os.environ.get("DEBUG_EVENTS"))
         for event in stream:
-            if event.type == "agent.message":
+            etype = getattr(event, "type", "")
+            if debug_events:
+                print(f"\n>> event: {etype}", flush=True)
+            if etype == "agent.message":
                 for block in event.content:
                     if getattr(block, "type", None) == "text":
                         final_text_parts.append(block.text)
                         print(block.text, end="", flush=True)
-            elif event.type == "agent.tool_use":
-                # Show file ops on /mnt/memory/ in particular — that's the demo
+            elif etype == "agent.tool_use":
                 name = getattr(event, "name", "?")
                 inp = getattr(event, "input", {}) or {}
                 target = inp.get("path") or inp.get("file_path") or inp.get("command") or ""
@@ -153,9 +156,22 @@ def main() -> None:
                     print(f"\n  [memory: {name}  {target}]", flush=True)
                 else:
                     print(f"\n  [{name}]", flush=True)
-            elif event.type == "session.status_idle":
-                print("\n\n[agent finished]")
-                break
+            elif etype == "span.model_request_start":
+                # No output streams while the model is thinking; show a
+                # heartbeat so a long turn doesn't look like a freeze.
+                print("\n  [thinking…]", flush=True)
+            else:
+                # The session is done when it goes idle. The exact event name
+                # has varied across SDK versions, so match defensively rather
+                # than waiting forever on one literal string.
+                status = getattr(event, "status", None)
+                if (
+                    etype == "session.status_idle"
+                    or etype.endswith(".idle")
+                    or status in ("idle", "completed", "ended")
+                ):
+                    print("\n\n[agent finished]")
+                    break
 
     final_text = "".join(final_text_parts)
     OUTPUT_DIR.mkdir(exist_ok=True)
