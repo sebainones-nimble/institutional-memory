@@ -1,33 +1,33 @@
-# Team Directory Update — May 2026
+# Concord Directory Update — Cycle 2026.05
 
-*Reflects the org changes from the May 2026 re-org.*
+*Reflects the council changes from the Cycle 2026.05 re-binding.*
 
-## Engineering Leadership — changes
+## Council Leadership — changes
 
-- **Anika Reddy** has moved into a new role as **Chief AI Officer**, effective 2026-04-01. She no longer manages Engineering day-to-day.
-- **Yuki Tanaka** is the new **Head of Engineering**, effective 2026-04-15.
-- **Tom Bryce** has been promoted to **Head of Platform**, replacing Yuki in that role.
-- **Carlos Mendes** continues as Head of SRE.
-- **Maya Singh** continues as Head of Security.
+- **Anira Vel** has moved into a new role as **Chief Liaison to the Living**, effective 2026.04.01. She no longer oversees Exploration day-to-day.
+- **Yuuth Kanra** is the new **Head of Exploration**, effective 2026.04.15.
+- **Torm Brask** has been raised to **Custodian of Systems**, replacing Yuuth in that role.
+- **Caro Mensk** continues as Head of Retrieval.
+- **Maa'ya Senth** continues as Keeper of Seals.
 
-## Engineering Ops Lead role
+## Operations Steward role
 
-The Engineering Ops Lead role (previously Tom's) is now held by **Priya Shah**, who moved over from leading the Web team.
+The Operations Steward role (previously Torm's) is now held by **Pria Shal**, who moved over from leading the Render team.
 
-## Service ownership — changes
+## Engine ownership — changes
 
-| Service | Was | Is now |
+| Engine | Was | Is now |
 | --- | --- | --- |
-| payment-service | Tom Bryce | Maya Patel (new hire, joined 2026-03) |
-| frontend | Priya Shah | Daniel Okonkwo |
+| harvest-engine | Torm Brask | Mai Pell (newly arrived, residency began 2026.03) |
+| surface-render engine | Pria Shal | Dani Okonn |
 
-All other service ownerships unchanged.
+All other engine ownerships unchanged.
 
-## SRE Team — changes
+## Watch (Retrieval Team) — changes
 
-- **Diego Sanchez** returned from parental leave in May 2026.
-- **Anil Krishnan** joined as a new SRE in April 2026.
+- **Dego Sann** returned from dormancy in the Cycle 2026.05 orbit.
+- **Anel Krish** arrived as a new Watcher in the Cycle 2026.04 orbit.
 
 ## Important
 
-If you have notes from before May 2026 referencing Anika as Head of Engineering or Tom as Eng Ops Lead, those notes are out of date.
+If you hold notes from before Cycle 2026.05 referencing Anira as Head of Exploration or Torm as Operations Steward, those notes are out of date.
