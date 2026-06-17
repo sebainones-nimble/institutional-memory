@@ -1,26 +1,26 @@
-# Production Access Policy
+# Terran Engram Archive — Access Policy
 
-*Effective January 2026. Owned by Maya Singh (Head of Security).*
+*Effective Cycle 2026.01. Owned by Maa'ya Senth (Keeper of Seals).*
 
-This is the authoritative source for how production access is granted at BTS-Synthetic.
+This is the authoritative source for how access to human memory is granted within the Vesh Concord. The Terran Engram Archive holds the recovered memories of living and departed humans; access is controlled because reading a human's memory is never neutral.
 
 ## Three levels
 
-1. **Read-only** — Eligibility: 2 weeks of tenure + completed pairing session with SRE. Use: debugging, observability, log access.
-2. **Read-write** — Eligibility: 6 weeks of tenure + read-only level + tech lead sign-off + SRE sign-off. Use: configuration changes, restart commands.
-3. **Privileged** — Eligibility: on-call certification (typically 12 weeks). Use: incident response, emergency rollback, IAM changes.
+1. **Surface access (read-only)** — Eligibility: 2 cycles of residency + completed attunement session with a Watcher. Use: observing episodic and sensory recall, ambient study, non-intrusive observation.
+2. **Annotation access (read-write)** — Eligibility: 6 cycles of residency + surface access + overseer sign-off + Watcher sign-off. Use: cross-linking engrams, tagging, correcting archival drift.
+3. **Deep access (privileged)** — Eligibility: resonance certification (typically 12 cycles). Use: extracting suppressed or identity-level engrams, re-sequencing trauma, emergency reconstruction of a fading mind,
 
-## Standard read-only access request
+## Standard surface-access request
 
-1. Engineer opens a ticket in `#sre-access-requests`.
-2. Engineer tags their direct manager AND the SRE on rota for that week.
-3. SRE on rota schedules a 30-minute pairing session within 2 working days.
-4. After pairing, SRE files the access via Okta. Provisioning typically completes within 4 hours.
+1. Researcher opens a petition in the `#retrieval-hall` channel.
+2. Researcher tags their direct overseer AND the Watcher on rotation for that span.
+3. Watcher on rotation schedules a 30-cycle attunement session within 2 working cycles.
+4. After attunement, the Watcher binds the access through the Seal-Engine. Binding typically completes within 4 cycles.
 
 ## Exception: urgent access requests
 
-If an engineer needs urgent read-only access (e.g., to debug a P1 incident), the on-call SRE may grant temporary 24-hour access without a pairing session. The pairing session must happen within 5 working days of the grant or the access is revoked automatically.
+If a researcher needs urgent surface access (e.g., to stabilise a human mind that is actively fading), the Watcher on rotation may grant temporary 24-cycle access without an attunement session. The attunement must happen within 5 working cycles of the grant or the access is severed automatically.
 
 ## Review cadence
 
-This policy is reviewed quarterly by Security and SRE leads. Last review: 2025-12-15.
+This policy is reviewed each quarter-orbit by Containment and Retrieval leads. Last review: Cycle 2025.12.15.

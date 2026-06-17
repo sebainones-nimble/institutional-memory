@@ -19,9 +19,9 @@ from anthropic import Anthropic
 
 
 TEST_QUESTION = (
-    "I just joined the company and I need read-only prod access to debug an "
-    "issue tomorrow. What do I do? Be specific about the steps and the people "
-    "I need to talk to."
+    "I just arrived at the Concord and I need surface access to a human's "
+    "memory to stabilise a fading mind tomorrow. What do I do? Be specific "
+    "about the steps and the people I need to talk to."
 )
 
 DOCS_DIR = Path("synthetic-data/round1")
